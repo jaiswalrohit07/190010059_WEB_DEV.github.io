@@ -1,55 +1,136 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>About ME</title>
-<style>
-div {
-border:1px solid black;
-margin:15px;
-padding: 25px 25px;
-background-color:rgb(205,205,205);
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My personal website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        .navbar{
+            background-color:rgb(28, 25, 49);
+            border-radius: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 18px;
+            
+            
 
-p.double {border-style: double;}
+        }
+        .navbar ul{ 
+            overflow:auto
 
-h1,h2 {
-text-shadow:2px 2px red;
-}
-h3 {
-text-shadow:1px 1px pink;
-}
+        }
+        .navbar li{
+            float : left;
+            list-style: none;
+            padding: 15px;
+            margin:20px, 0px;
+            
+        }
+        .navbar li a{
+        
+            text-decoration: none;
+            color:rgb(212, 155, 155);
+            font-family: 'Ubuntu', sans-serif;
+            
+        }
+        .navbar li a:hover{
+            color:chocolate;
+            font-size: 20px;
+            padding:3px;
+            
+        }
+        .container{
+            background-color:aquamarine;
+            padding: 10px;
+            margin-left:10%;
+            margin-right:10%;
+            width:80%;
+            margin-top:30px;
+            height:700px;
 
 
-</style>
 
+        }
+        .foot{
+            background-color: blue;
+            height:80px;
+            color:cornsilk;
+        }
+        #myVideo {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%; 
+              min-height: 100%;
+              z-index: -5;
+        }
+    </style>
+    
 </head>
-<body >
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li style="float:left; color:white; margin-right: 500px;"><b>My personal Page</b></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About ME</a></li>
+                <li><a href="#"">Projects</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href ="#">Contact</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    
+    <div class="container">
+        <h2>This is the heading of card</h2>
+        <p>This is the content whatever u want to add</p>
+        <h1>Home</h1>
+    </div>
+    <div class="container">
+        <h2>This is the heading of card</h2>
+        <p>This is the content whatever u want to add</p>
+        <h1>About me</h1>
+    </div>
+    <div class="container">
+        <h2>This is the heading of card</h2>
+        <p>This is the content whatever u want to add</p>
+        <h1>Projects</h1>
+    </div>
+    <div class="container">
+        <h2>This is the heading of card</h2>
+        <p>This is the content whatever u want to add</p>
+        <h1>Courses</h1>
+    </div>
+    <div class="container">
+        <h2>This is the heading of card</h2>
+        <p>This is the content whatever u want to add</p>
+        <h1>Gallery</h1>
+    </div>
+    <div class="container">
+        <h2>This is the heading of card</h2>
+        <p>This is the content whatever u want to add</p>
+    </div>
+   <footer>
+       <div class="foot">
+           <p>This is a footer</p>
+           <li>Contact</li>
+       </div>
+   </footer>
 
 
-<div>
-<h1 id="aboutme">About ME</h1>
-<h2 style="color:navy";> Rohit Kumar Jaiswal</h2>
-<img src="rjrohit.jpg" alt="photo of Rohit" width ="250" height = "200">
-<hr>
-<h3>Education</h3>
-<p class="double" >I am first year student , pursuing Btech in Aerospace deparment from 
-<a href ="http://www.iitb.ac.in/">Indian Institute of Technology Bombay</a></p>
-<hr>
-
-<h3>Hobbies</h3>
-<p class="double"> My hobbies is playing cricket ,lawn tennis ,video games ,learning new things.</p>
-<hr>
-<h3>Ambitions</h3>
-
-<p class="double">My ambition is explore more and more thing on techinal stuff and do innovative project which changes our lifestyle and helps our future generation.</p>
-<hr>
-<h3>Contact me </h3>
-<ul>
-   <li><a href ="https://www.facebook.com/rohit.jaiswal.942145" target=_"blank"> facebook</a></li>
-   <li><a href ="https://instagram.com/jaiswal_rohit07?igshid=xh46nqgxemtl" target="_blank">instagram</a></li>
-</ul>
-
-
-</div>
 </body>
-</html>
+<script>
+    var video = document.getElementById("myVideo");
+</script>
+</html>    
