@@ -11,11 +11,15 @@
         .navbar{
             background-color:rgb(28, 25, 49);
             border-radius: 25px;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-left:fixed;
+            margin-right: fixed;
             font-family: 'Ubuntu', sans-serif;
             font-size: 18px;
             
+            width:100%;
+            z-index: 5;
+            margin-bottom: 50px;
+            top:0;
             
 
         }
@@ -44,21 +48,24 @@
             
         }
         .container{
-            background-color:aquamarine;
+            background-color:rgb(196, 172, 172);
             padding: 10px;
             margin-left:10%;
             margin-right:10%;
             width:80%;
-            margin-top:30px;
             height:700px;
+            margin-bottom: 8%;
 
 
 
         }
         .foot{
             background-color: blue;
-            height:80px;
+            height:200px;
             color:cornsilk;
+            margin-top: 100px;
+           
+
         }
         #myVideo {
               position: fixed;
@@ -68,65 +75,178 @@
               min-height: 100%;
               z-index: -5;
         }
+        .marq{
+            color: red;
+            
+            
+        }
+        #home{
+            height:700px;
+            font-size: 4vw;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #top:hover{
+            color:Green;
+            align:center;
+        }
+        .card{
+            text-align: center;
+            color:aliceblue;
+            font-family: 'Ubuntu', sans-serif;
+            font-size:4vw;
+        }
+        .text{
+            font-family:  'Ubuntu', sans-serif;
+            font-size: 1.80vw; 
+        }
+        #myphoto{
+            border-radius: 20px;
+        }
+        .homepage{
+            font-size: 2vw;
+            color:black
+
+        }
+        #contact{
+            margin-top: 20px;
+            
+        }
+        .footer{
+            position: fixed;
+            margin-top: 150px;
+
+        }
+        .foot a:hover {
+             width:10%;
+             color:transparent;
+        }
+        .footer a {
+            padding:10px;
+            margin-top:20px ;
+        }
+        .body{
+            
+        }
+        /* this is css for background theme */
+        /* .large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index:-10;
+}
+
+.demo .large-header {
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+} */
+
     </style>
     
 </head>
-<<<<<<< HEAD
-<body>
+
+<body >
     <header>
-        <nav class="navbar">
+        <nav class="navbar" style="margin-bottom: 70px;">
             <ul>
                 <li style="float:left; color:white; margin-right: 500px;"><b>My personal Page</b></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About ME</a></li>
-                <li><a href="#"">Projects</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href ="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Aboutme">About ME</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href ="#contact">Contact</a></li>
                 
                 
             </ul>
         </nav>
     </header>
-    <video autoplay muted loop id="myVideo">
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-    
-    <div class="container">
-        <h2>This is the heading of card</h2>
-        <p>This is the content whatever u want to add</p>
-        <h1>Home</h1>
+
+    <!-- <div class="container demo">
+        <div class="content">
+           <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+              <h1 class="main-title"><span class="thin">Explore</span> Space</h1>
+           </div>
+        </div>
+     </div>
+     -->
+    <div class="container" id="home">
+        <h2 style="margin-top: 100px;" ><marquee class="marq" behavior="scroll" scrollamount="15" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> Welcome To My Home page </marquee></h2>
+        <p  class="homepage" style="font-size: 2vw;">This is a genric attempt to build my webpage. This has been made through the assignment of Web Development in TSS of Learners' Space, IITB. <br><br>
+            Hopefully, In the upcoming week, this page will become better and better, Now this page is in underprogress. </p>
+        <!p style="color:#292ca0">Anyway Let's start!!</p>
+        
     </div>
     <div class="container">
-        <h2>This is the heading of card</h2>
-        <p>This is the content whatever u want to add</p>
-        <h1>About me</h1>
+        <h2 class="card" id="Aboutme">About Me</h2>
+        <img src="images/myphoto.JPG" alt="Photo of mine" id="myphoto" width="380px" align="right" style="margin-bottom: auto;">
+        <p class="text">Hello, This is Rohit Jaiswal, pursuing undergraduate in<a href="https://www.aero.iitb.ac.in"> Aerospace department</a> at Indian Institute of Technology Bombay. I am from Dhanbad, Jharkhand. My current interest is in Web Development, Aeromodelling .I would like to play Cricket, Lawn Tennis , Mobile Games and exploring new things in technical and non-technical stuff.<br>
+          <br>  Currently, I'm working in Team Exo-fly, IITB as a core team member in Electrical sub-system. And also in the Aeromodelling Club, IIT Bombay.<br><br>
+          One of my favourite quote of all time, <br>
+          <br>
+          <i style="color:#16992c";>"Try new things and keep an open mind. Maybe you don't find out what you want in life but at least now you know what you don't want".</i>
+        
     </div>
     <div class="container">
-        <h2>This is the heading of card</h2>
-        <p>This is the content whatever u want to add</p>
-        <h1>Projects</h1>
+        <h2 class ="card" id="projects">Projects</h2><br><br><br>
+
+        <p>To be uploaded soon</p>
+        <!h1>Projects</h1>
     </div>
     <div class="container">
-        <h2>This is the heading of card</h2>
-        <p>This is the content whatever u want to add</p>
+        <h1 class="card" id="courses">Courses</h1>
+        <p>To be uploaded soon</p>
         <h1>Courses</h1>
     </div>
-    <div class="container">
-        <h2>This is the heading of card</h2>
-        <p>This is the content whatever u want to add</p>
-        <h1>Gallery</h1>
-    </div>
-    <div class="container">
-        <h2>This is the heading of card</h2>
-        <p>This is the content whatever u want to add</p>
+    <div class="container" style="margin-bottom:150px">
+        <h1 class="card" id="gallery">Gallery</h1>
+        <p>Some beautiful moments to be Captured</p>
+        <!h1>Gallery</h1>
     </div>
    <footer>
-       <div class="foot">
-           <p>This is a footer</p>
-           <li>Contact</li>
-       </div>
+       <div class="foot" id="contact">
+           <div class="row1"></div>
+          
+           <a href="https://www.facebook.com/rohit.jaiswal.942145"><img src="images/fb.PNG" width="8%" style="align-content: center; margin-left: 25%;"></a>
+           <a href="https://instagram.com/jaiswal_rohit07?igshid=jesjfraxc7mf"><img src="images/insta.PNG" width="8%"></a>
+           <a href="https://github.com/jaiswalrohit07"><img src="images/github.PNG" width="8%"></a>
+           <a href="mailto: jaiswal07rohit@gmail.com"><img src="images/gmail.PNG" width="8%"></a>
+           <a href="https://twitter.com/RohitJa47913322"><img src="images/twitter.PNG" width="8%"></a>
+           <a href="https://www.linkedin.com/in/rohit-jaiswal-aa35b41a9/"><img src="images/link.PNG" width="8%"></a>
+           <br>
+           <p style="text-align:center; font-size:2vw;">Thanks For Visiting!</p>
+           
+      </div>
    </footer>
 
 
@@ -134,36 +254,4 @@
 <script>
     var video = document.getElementById("myVideo");
 </script>
-</html>    
-=======
-<body >
-
-
-<div>
-<h1 id="aboutme">About ME</h1>
-<h2 style="color:navy";> Rohit Kumar Jaiswal</h2>
-<img src="rjrohit.JPG" alt="photo of Rohit" width ="250" height = "200">
-<hr>
-<h3>Education</h3>
-<p class="double" >I am first year student , pursuing Btech in Aerospace deparment from 
-<a href ="http://www.iitb.ac.in/">Indian Institute of Technology Bombay</a></p>
-<hr>
-
-<h3>Hobbies</h3>
-<p class="double"> My hobbies is playing cricket ,lawn tennis ,video games ,learning new things.</p>
-<hr>
-<h3>Ambitions</h3>
-
-<p class="double">My ambition is explore more and more thing on techinal stuff and do innovative project which changes our lifestyle and helps our future generation.</p>
-<hr>
-<h3>Contact me </h3>
-<ul>
-   <li><a href ="https://www.facebook.com/rohit.jaiswal.942145" target=_"blank"> facebook</a></li>
-   <li><a href ="https://instagram.com/jaiswal_rohit07?igshid=xh46nqgxemtl" target="_blank">instagram</a></li>
-</ul>
-
-
-</div>
-</body>
-</html>
->>>>>>> 0e56f413e34273eef829210634b7cdcf4822017d
+</html> 
