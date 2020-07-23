@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
@@ -8,124 +8,180 @@
     <title>My personal website</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style>
-        .navbar{
-            background-color:rgb(28, 25, 49);
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: rgb(28, 25, 49);
             border-radius: 25px;
-            margin-left:fixed;
+            margin-left: fixed;
             margin-right: fixed;
             font-family: 'Ubuntu', sans-serif;
             font-size: 18px;
-            
-            width:100%;
+
+            width: 100%;
             z-index: 5;
             margin-bottom: 50px;
-            top:0;
-            
+            top: 0;
+
 
         }
-        .navbar ul{ 
-            overflow:auto
 
+        .navbar ul {
+            overflow: auto
         }
-        .navbar li{
-            float : left;
+
+        .navbar li {
+            float: left;
             list-style: none;
             padding: 15px;
-            margin:20px, 0px;
-            
+            margin: 20px, 0px;
+
         }
-        .navbar li a{
-        
+
+        .navbar li a {
+
             text-decoration: none;
-            color:rgb(212, 155, 155);
+            color: rgb(212, 155, 155);
             font-family: 'Ubuntu', sans-serif;
-            
+
         }
-        .navbar li a:hover{
-            color:chocolate;
+
+        .navbar li a:hover {
+            color: chocolate;
             font-size: 20px;
-            padding:3px;
-            
+            padding: 3px;
+
         }
-        .container{
-            background-color:rgb(196, 172, 172);
+
+        .container {
+            background-color: rgb(196, 172, 172);
             padding: 10px;
-            margin-left:10%;
-            margin-right:10%;
-            width:80%;
-            height:700px;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            height: 700px;
             margin-bottom: 8%;
 
 
 
         }
-        .foot{
+
+        .foot {
             background-color: blue;
-            height:200px;
-            color:cornsilk;
+            height: 200px;
+            color: cornsilk;
             margin-top: 100px;
-           
+
 
         }
+
         #myVideo {
-              position: fixed;
-              right: 0;
-              bottom: 0;
-              min-width: 100%; 
-              min-height: 100%;
-              z-index: -5;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -5;
         }
-        .marq{
+
+        .marq {
             color: red;
-            
-            
+
+
         }
-        #home{
-            height:700px;
+
+        #home {
+            height: 700px;
             font-size: 4vw;
             font-family: 'Ubuntu', sans-serif;
         }
-        #top:hover{
-            color:Green;
-            align:center;
+
+        #top:hover {
+            color: Green;
+            align: center;
         }
-        .card{
+
+        .card {
             text-align: center;
-            color:aliceblue;
+            color: aliceblue;
             font-family: 'Ubuntu', sans-serif;
-            font-size:4vw;
+            font-size: 4vw;
         }
-        .text{
-            font-family:  'Ubuntu', sans-serif;
-            font-size: 1.80vw; 
+
+        .text {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 2vw;
         }
-        #myphoto{
+
+        #myphoto {
             border-radius: 20px;
         }
-        .homepage{
+
+        .homepage {
             font-size: 2vw;
-            color:black
+            color: black
+        }
+
+        #contact {
+            margin-top: 0px;
 
         }
-        #contact{
-            margin-top: 20px;
-            
-        }
-        .footer{
+
+        .footer {
             position: fixed;
             margin-top: 150px;
 
         }
+
         .foot a:hover {
-             width:10%;
-             color:transparent;
+            width: 10%;
+            color: transparent;
         }
+
         .footer a {
-            padding:10px;
-            margin-top:20px ;
+            padding: 10px;
+            margin-top: 20px;
         }
-        .body{
-            
+
+        .body {
+            background-color: grey;
+            z-index: -10;
+        }
+
+        .abouttext{
+            display: flex;
+            padding:10px;
+            width:70%;
+        } */
+        .aboutimg{
+            display:flex;
+            padding:10px;
+            width:20%
+        } 
+        .cont{
+             background-color: blueviolet;
+             height:400px;
+             width:100%;
+        }
+        .text-center{
+            text-align: center;
+            padding:30px;
+            font-family:  'Ubuntu', sans-serif;
+        }
+        .form{
+            max-width: 40%;
+            margin: 20px auto;
+        }
+        .form input{
+            width:100%;
+            font-size:19px;
+            border: 2px solid grey;
+            border-radius: 6px;
+            margin:15px 0;
+            padding: 5px 3px;
+
         }
         /* this is css for background theme */
         /* .large-header {
@@ -169,12 +225,12 @@
       font-size: 3em;
    }
 } */
-
     </style>
-    
+
 </head>
 
-<body >
+<body>
+
     <header>
         <nav class="navbar" style="margin-bottom: 70px;">
             <ul>
@@ -184,9 +240,9 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href ="#contact">Contact</a></li>
-                
-                
+                <li><a href="#cont">Contact</a></li>
+
+
             </ul>
         </nav>
     </header>
@@ -200,25 +256,42 @@
         </div>
      </div>
      -->
+
     <div class="container" id="home">
-        <h2 style="margin-top: 100px;" ><marquee class="marq" behavior="scroll" scrollamount="15" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> Welcome To My Home page </marquee></h2>
-        <p  class="homepage" style="font-size: 2vw;">This is a genric attempt to build my webpage. This has been made through the assignment of Web Development in TSS of Learners' Space, IITB. <br><br>
-            Hopefully, In the upcoming week, this page will become better and better, Now this page is in underprogress. </p>
+        <h2 style="margin-top: 100px;">
+            <marquee class="marq" behavior="scroll" scrollamount="15" direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();"> Welcome To My Home page </marquee>
+        </h2>
+        <p class="homepage" style="font-size: 2vw;">This is a genric attempt to build my webpage. This has been made
+            through the assignment of Web Development in TSS of Learners' Space, IITB. <br><br>
+            Hopefully, In the upcoming week, this page will become better and better, Now this page is in underprogress.
+        </p>
         <!p style="color:#292ca0">Anyway Let's start!!</p>
-        
+
     </div>
     <div class="container">
         <h2 class="card" id="Aboutme">About Me</h2>
-        <img src="images/myphoto.JPG" alt="Photo of mine" id="myphoto" width="380px" align="right" style="margin-bottom: auto;">
-        <p class="text">Hello, This is Rohit Jaiswal, pursuing undergraduate in<a href="https://www.aero.iitb.ac.in"> Aerospace department</a> at Indian Institute of Technology Bombay. I am from Dhanbad, Jharkhand. My current interest is in Web Development, Aeromodelling .I would like to play Cricket, Lawn Tennis , Mobile Games and exploring new things in technical and non-technical stuff.<br>
-          <br>  Currently, I'm working in Team Exo-fly, IITB as a core team member in Electrical sub-system. And also in the Aeromodelling Club, IIT Bombay.<br><br>
-          One of my favourite quote of all time, <br>
-          <br>
-          <i style="color:#16992c";>"Try new things and keep an open mind. Maybe you don't find out what you want in life but at least now you know what you don't want".</i>
-        
+        <div class="aboutimg">
+        <img src="images/myphoto.JPG" alt="Photo of mine" id="myphoto" align="right" width="300px"
+            style="margin-bottom: auto;">
+        </div>
+        <div class="abouttext">
+            <p class="text">Hello, This is Rohit Jaiswal, pursuing undergraduate in<a
+                    href="https://www.aero.iitb.ac.in"> Aerospace department</a> at Indian Institute of Technology
+                Bombay. I am from Dhanbad, Jharkhand. My current interest is in Web Development, Aeromodelling .I would
+                like to play Cricket, Lawn Tennis , Mobile Games and exploring new things in technical and non-technical
+                stuff.<br>
+                <br> Currently, I'm working in Team Exo-fly, IITB as a core team member in Electrical sub-system. And
+                also in the Aeromodelling Club, IIT Bombay.<br><br>
+                One of my favourite quote of all time, <br>
+                <br>
+                <i style="color:#16992c" ;>"Try new things and keep an open mind. Maybe you don't find out what you want
+                    in life but at least now you know what you don't want".</i>
+            </p>        
+        </div>
     </div>
     <div class="container">
-        <h2 class ="card" id="projects">Projects</h2><br><br><br>
+        <h2 class="card" id="projects">Projects</h2><br><br><br>
 
         <p>To be uploaded soon</p>
         <!h1>Projects</h1>
@@ -233,25 +306,45 @@
         <p>Some beautiful moments to be Captured</p>
         <!h1>Gallery</h1>
     </div>
-   <footer>
-       <div class="foot" id="contact">
-           <div class="row1"></div>
-          
-           <a href="https://www.facebook.com/rohit.jaiswal.942145"><img src="images/fb.PNG" width="8%" style="align-content: center; margin-left: 25%;"></a>
-           <a href="https://instagram.com/jaiswal_rohit07?igshid=jesjfraxc7mf"><img src="images/insta.PNG" width="8%"></a>
-           <a href="https://github.com/jaiswalrohit07"><img src="images/github.PNG" width="8%"></a>
-           <a href="mailto: jaiswal07rohit@gmail.com"><img src="images/gmail.PNG" width="8%"></a>
-           <a href="https://twitter.com/RohitJa47913322"><img src="images/twitter.PNG" width="8%"></a>
-           <a href="https://www.linkedin.com/in/rohit-jaiswal-aa35b41a9/"><img src="images/link.PNG" width="8%"></a>
-           <br>
-           <p style="text-align:center; font-size:2vw;">Thanks For Visiting!</p>
-           
-      </div>
-   </footer>
+    
+    
+    
+    <section class="cont" id="cont">
+        <h1 class ="text-center">Contact Me</h1>
+        <div class="form">
+            <input type="textf" name="name" id="name" placeholder="Enter your name">
+            <input type="textf" name="phone" id="phone" placeholder="Enter your Mobile no.">
+            <input type="textf" name="email" id="email" placeholder="Enter your Email">
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <div class="foot" id="contact">
+            <div class="row1"></div>
+
+            <a href="https://www.facebook.com/rohit.jaiswal.942145"><img src="images/fb.PNG" width="8%"
+                    style="align-content: center; margin-left: 25%;"></a>
+            <a href="https://instagram.com/jaiswal_rohit07?igshid=jesjfraxc7mf"><img src="images/insta.PNG"
+                    width="8%"></a>
+            <a href="https://github.com/jaiswalrohit07"><img src="images/github.PNG" width="8%"></a>
+            <a href="mailto: jaiswal07rohit@gmail.com"><img src="images/gmail.PNG" width="8%"></a>
+            <a href="https://twitter.com/RohitJa47913322"><img src="images/twitter.PNG" width="8%"></a>
+            <a href="https://www.linkedin.com/in/rohit-jaiswal-aa35b41a9/"><img src="images/link.PNG" width="8%"></a>
+            <br>
+            <p style="text-align:center; font-size:2vw;">Thanks For Visiting!</p>
+
+        </div>
+    </footer>
 
 
 </body>
 <script>
     var video = document.getElementById("myVideo");
 </script>
-</html> 
+
+</html>
